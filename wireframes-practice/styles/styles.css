@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid grey;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 40%;
+    border: 2px solid grey;
+}
+
+footer {
+    background-color: #dbdfe2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5%
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
