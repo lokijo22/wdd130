@@ -1,4 +1,109 @@
+:root {
+    --primary-color: #0063cc   ;
+    --secondary-color: #228b3b ;
+    --tertiary-color: #ffc107;
+    --accent1-color: #e7e6db;
+    --accent2-color: white;
+}
+
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: var(--accent2-color)
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    color: var(--primary-color);
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+main section {
+    text-align: center;
+}
+
+body {
+    background-color: var(--accent2-color);
+}
+header {
+    background-color: var(--accent1-color);
+}
+nav a:hover {
+    color: var(--secondary-color);
+}
+.book, .join {
+    margin: 5px auto;
+    color: var(--secondary-color);
+}
+.book:hover, .join:hover {
+    color: var(--primary-color);
+}
+#background {
+    background-color: var(--accent1-color);
+}
+.msg {
+    background-color: var(--accent1-color);
+}
+footer {
+    background-color: var(--accent1-color);
+}
+
+.home-title {
+    color: var(--primary-color);
+}
+
+h4 {
+    color: var(--secondary-color);
+}
+
+.msg h2 {
+    color: var(--primary-color);
+}
+
+.msg p {
+    color: var(--secondary-color);
+}
+
+nav a, footer a, .book, .join {
+    text-decoration: none;
+}
+
+.rapids-card img, .rivers-card img, .camping-card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.rapids-card, .rivers-card, .camping-card {
+    background-color: var(--accent1-color);
+    margin: 0 auto
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
