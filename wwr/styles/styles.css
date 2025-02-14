@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
 :root {
     --primary-color: #0063cc   ;
     --secondary-color: #228b3b ;
     --tertiary-color: #ffc107;
     --accent1-color: #e7e6db;
-    --accent2-color: white;
+    --accent2-color: #e0c8a3;
 }
 
 .logo {
@@ -18,11 +20,13 @@
 
 section {
     text-align: center;
+    padding: 20px 0px;
 }
 
 #background {
     height: 725px;
-    background-color: var(--accent2-color)
+    background-color: var(--accent2-color);
+    margin: 15px auto;
 }
 
 #content {
@@ -30,48 +34,90 @@ section {
     margin: 0 auto;
 }
 
-nav a {
-    text-align: center;
-    color: var(--primary-color);
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    padding: 10px 0px;
+    border-bottom: 2px solid darkgray;
 }
+
+nav a {
+    color: var(--primary-color);
+    text-align: center;
+    flex: 1;
+}
+
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
+
 .button-box {
     text-align: center;
 }
+
 main section {
     text-align: center;
 }
 
 body {
-    background-color: var(--accent2-color);
+    background-color: white;
+    font-size: 22px;
+    font-family:'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 header {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
     background-color: var(--accent1-color);
 }
+
 nav a:hover {
     color: var(--secondary-color);
 }
+
 .book, .join {
     margin: 5px auto;
-    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    background-color: var(--tertiary-color);
+    border: 3px solid var(--accent2-color);
+    border-radius: 5px;
 }
+
 .book:hover, .join:hover {
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
+    border: 3px solid darkgray;
 }
+
 #background {
     background-color: var(--accent1-color);
 }
+
 .msg {
     background-color: var(--accent1-color);
+    line-height: 1.5em;
+    padding: 15px;
+    margin: 15px auto;
 }
+
 footer {
     background-color: var(--accent1-color);
+    justify-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .home-title {
     color: var(--primary-color);
+    font-size: 2em;
 }
 
 h4 {
@@ -80,10 +126,12 @@ h4 {
 
 .msg h2 {
     color: var(--primary-color);
+    padding: 10px;
 }
 
 .msg p {
     color: var(--secondary-color);
+    font-size: 0.8em;
 }
 
 nav a, footer a, .book, .join {
@@ -93,17 +141,52 @@ nav a, footer a, .book, .join {
 .rapids-card img, .rivers-card img, .camping-card img {
     display: block;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .rapids-card, .rivers-card, .camping-card {
     background-color: var(--accent1-color);
-    margin: 0 auto
+    margin: 5px auto;
+    padding: 20px 0px;
 }
 
 footer p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0;
+}
+
+.mountains {
+    display: block;
+    justify-self: center;
+}
+
+#hero-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#hero-box {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img {
+    border: 10px solid darkgray;
+}
+
+main section img {
+    box-sizing: border-box;
 }
