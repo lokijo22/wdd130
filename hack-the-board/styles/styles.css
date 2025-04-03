@@ -1,0 +1,3 @@
+.games-display img {
+    width:  30%;
+    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio for equal width and height */}

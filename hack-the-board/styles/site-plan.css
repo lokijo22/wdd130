@@ -19,10 +19,15 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #f6f0f0   ;
+  /* --primary-color: #f6f0f0;
   --secondary-color: #f2e2b1 ;
   --accent1-color: #d5c7a3;
-  --accent2-color: #bdb395;
+  --accent2-color: #bdb395; */
+
+  --primary-color: #e4fde1;
+  --secondary-color: #8acb88 ;
+  --accent1-color: #30343f;
+  --accent2-color: #1e2749;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Poppins', sans-serif;
@@ -39,7 +44,6 @@ Fonts are separated by a | */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #396E94;
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
