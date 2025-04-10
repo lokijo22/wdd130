@@ -5,11 +5,6 @@
     --accent2-color: #1e2749;
 }
 
-.games-display img {
-    width:  30%;
-    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio for equal width and height */
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -85,16 +80,16 @@ nav li:hover a {
     transition: 0.4s
 }
 
-nav li:first-child:hover {
-    background-color: #4b5163; /* Different background color for the first child */
+nav li:nth-child(3):hover {
+    background-color: #4b5163; /* Different background color for the third child on hover */
 }
 
-nav li:first-child {
-    background-color: #292d36; /* Different background color for the first child */
+nav li:nth-child(3) {
+    background-color: #292d36; /* Different background color for the third child */
 }
 
-nav li:first-child a {
-    color: white; /* Different background color for the first child */
+nav li:nth-child(3) a {
+    color: white; /* Different text color for the third child */
     font-size: large;
 }
 
