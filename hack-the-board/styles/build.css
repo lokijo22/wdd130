@@ -1,8 +1,10 @@
 :root {
     --primary-color: #e4fde1;
-    --secondary-color: #8acb88 ;
+    --secondary-color: #8acb88;
     --accent1-color: #30343f;
     --accent2-color: #1e2749;
+    --text-color: #ffffff;
+    --hover-color: #4b5163;
 }
 
 html, body {
@@ -12,10 +14,10 @@ html, body {
 
 header {
     background-color: var(--accent1-color);
-    display: grid; /* Use CSS Grid */
+    display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 0 1em;
+    padding: 1em;
     margin: 0;
 }
 
@@ -23,10 +25,7 @@ header img {
     display: block;
     grid-column: 1;
     margin-right: 10px;
-}
-
-.icon {
-    width:  75px;
+    width: 75px;
     aspect-ratio: 1 / 1;
 }
 
@@ -34,7 +33,7 @@ header h3 {
     font-family: "Bradley Hand ITC", sans-serif;
     font-size: 40px;
     font-weight: lighter;
-    color: white;
+    color: var(--text-color);
     margin: 0;
     grid-column: 2;
     justify-self: start;
@@ -42,63 +41,151 @@ header h3 {
 
 nav {
     grid-column: 3;
-    display: grid; /* Use CSS Grid for the nav element */
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Create 4 equal columns for the nav items */
-    gap: 0; /* Remove spacing between items */
-    justify-self: end; /* Align the nav to the end of the header */
-    padding: 0; /* Remove padding around the nav */
-    margin: 0; /* Remove margin around the nav */
-    align-items: center; /* Vertically center the items */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    justify-self: end;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
 
 nav ul {
-    display: contents; /* Allow the grid layout to apply directly to the <li> elements */
-    list-style: none; /* Remove default list styling */
-    margin: 0; /* Remove margin around the list */
-    padding: 0; /* Remove padding around the list */
+    display: contents;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-    display: flex; /* Use Flexbox for centering */
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    padding: 0; /* Remove padding inside the list items */
-    height: 100px; /* Keep the height consistent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 100px;
     width: 150px;
-    margin: 0; /* Remove margin around the list items */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav li:hover {
-    background-color: #4b5163; /* Change background color on hover */
-    transform: scale(1.1); /* Slightly enlarge the element on hover */
-    transition: 0.4s
+    background-color: var(--hover-color);
+    transform: scale(1.1);
 }
 
 nav li:hover a {
-    color: white;
-    transition: 0.4s
+    color: var(--text-color);
 }
 
-nav li:first-child:hover {
-    background-color: #4b5163; /* Different background color for the first child */
+nav li:nth-child(2):hover {
+    background-color: var(--hover-color);
 }
 
-nav li:first-child {
-    background-color: #292d36; /* Different background color for the first child */
+nav li:nth-child(2) {
+    background-color: #292d36;
 }
 
-nav li:first-child a {
-    color: white; /* Different background color for the first child */
+nav li:nth-child(2) a {
+    color: var(--text-color);
     font-size: large;
 }
 
 nav a {
     text-decoration: none;
-    color: lightslategray;
-    text-align: center; /* Center-align the text inside the grid cells */
-    padding: 0; /* Remove padding inside the links */
-    margin: 0; /* Remove margin around the links */
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 0;
+    margin: 0;
     font-size: large;
-    
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 1em;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightslategray;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a:hover {
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+footer p {
+    color: white;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Bradley Hand ITC", sans-serif;
+    color: var(--accent1-color);
+    margin: 1em 0;
+}
+
+.mod-section {
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 1200px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mod-title {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Bradley Hand ITC", sans-serif;
+    color: var(--accent1-color);
+    margin-bottom: 1em;
+}
+
+.mod-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+}
+
+.mod-grid img {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mod-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mod-text {
+    font-size: 1.2em;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--accent1-color);
+    text-align: left;
 }
